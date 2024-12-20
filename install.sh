@@ -35,7 +35,7 @@ else
 fi
 
 
-# copy .env.example to .env if .env 
+# copy .env.example to .env if .env
 cp --update=none $HARD_PATH/.env.example $HARD_PATH/.env
 
 # replace USER and USER_ID in .env for the current user
@@ -83,8 +83,8 @@ if [ -f ~/.local/bin/hard ]; then
   rm ~/.local/bin/hard
 fi
 
-# create a symbolic link to hard.sh
-ln -s -f -t ~/.local/bin $HARD_PATH/hard
+# create a symbolic link to hard binary
+ln -s -f -t ~/.local/bin $HARD_PATH/bin/hard
 
 # give permission
 chmod +x $HARD_PATH/hard
